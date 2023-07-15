@@ -1,0 +1,839 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*<---------------HEADER----------------->*/
+
+
+header {
+    height: 40px;
+    width: 100%;
+    background-color: #F6F7FA;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 990px;
+    margin: auto;
+}
+
+/*<---------------HEADER LEFT----------------->*/
+.headerLeft {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #8D94AD;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.headerLeft a:hover {
+    color: red;
+}
+
+/*<---------------HEADER RIGHT----------------->*/
+
+.headerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 600px;
+    margin-right: 15px;
+}
+
+.headerRight p {
+    color: #8D94AD;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.headerRight p:nth-child(1) {
+    color: black;
+}
+
+.number:hover {
+    color: red;
+}
+
+.headerRight p:hover {
+    color: red;
+}
+
+.loveIcon i {
+    margin-right: 5px;
+}
+
+.loveIcon {
+    color: #8D94AD;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serife;
+}
+
+.loveIcon a {
+    text-decoration: none;
+    color: #8D94AD;
+}
+
+
+.loveIcon a:hover {
+    color: red;
+}
+
+.girisIcon i {
+    margin-right: 5px;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+.girisIcon {
+    color: #8D94AD;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.girisIcon:hover {
+    color: red;
+}
+
+/*<--------------- NAVBAR ----------------->*/
+
+.navbarContent {
+    width: 100%;
+    height: 60px;
+    background-color: #CA1016;
+
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 990px;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+/*<--------------- NAVBAR LEFT----------------->*/
+
+
+.navbarLeft {
+    position: relative;
+    font-size: 16px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLeft {
+    cursor: pointer;
+    height: 60px;
+    width: 580px;
+}
+
+.navbarLeft div:hover {
+    color: #cacbd1;
+}
+
+.navbarLeft div:nth-child(1) {
+    color: white;
+}
+
+.navbarLeft div:nth-child(1) {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/*<--------------- NAVBAR RIGHT----------------->*/
+
+
+.buttonNav {
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #7ED321;
+}
+
+.buttonNav:hover {
+    background-color: #6bb918;
+    transition: 500ms;
+}
+
+.buttonNav i {
+    margin-right: 5px;
+}
+
+
+.text {
+    z-index: 1;
+    background-color: white;
+    transition: opacity 0.3s ease;
+    display: none;
+    left: 360px;
+    top: 50px;
+    position: absolute;
+    height: auto;
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+.mouseover {
+    padding: 10px;
+}
+
+
+.text ul li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    padding: 8px;
+    list-style-type: none;
+}
+
+.text ul li:hover {
+    background-color: #b0b2bb52;
+}
+
+.text ul {
+    padding-left: 0px;
+}
+
+.container {
+    height: auto;
+    width: 1000px;
+}
+
+#sklet {
+    display: flex;
+}
+
+.reklam {
+    position: sticky;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background-image: url(/images/reklam5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.filterContent {
+    width: 100%;
+    height: 270px;
+    background-color: #EBEDF3;
+}
+
+.reklam img {
+    width: 100%;
+    height: 100%;
+}
+
+.allcart {
+    z-index: -1;
+    margin-top: 10px;
+    background-color: #F6F7FA;
+    width: 1000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+
+}
+
+.cart {
+    margin-left: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 229px;
+    height: 266px;
+    background-color: aqua;
+    position: relative;
+    background-color: white;
+}
+
+.likebutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+.likebutton i {
+    font-size: 22px;
+    color: white;
+    overflow: hidden;
+}
+
+.image {
+    height: 170px;
+    width: 100%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.cart h3,
+p {
+    margin: 0px 0px 0px 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cart h3 {
+    font-size: 20px;
+}
+
+.cart span {
+    font-size: 15px;
+    margin-left: 5px;
+    color: #8D94AD;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cart:hover {
+    box-shadow: 0px -1px 15px 1px rgba(119, 119, 128, 0.279);
+    transition: 400ms;
+}
+
+.secilmisElan {
+    height: 30px;
+    width: 1000px;
+    background-color: #FFFFFF;
+}
+
+.secilmisElan h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+
+
+#likeCartAll {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.turbo a {
+    text-decoration: none;
+    color: white;
+}
+
+.red {
+    color: red !important;
+}
+
+#likeCartAll svg {
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+#likeCartAll h5 {
+    width: 600px;
+    margin-top: 350px;
+    margin-left: -390px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.navbarLeft a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbarLeft a:hover {
+    color: #cacbd1;
+}
+
+
+
+
+/* -------------------------> AVTOSALON <-------------------------*/
+
+.avtosalonAll {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.avtosalonAll a {
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.contentAvto {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 145px;
+    width: 475px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px rgba(201, 199, 199, 0.66);
+}
+
+
+.textAllAvto {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 145px;
+}
+
+.imgAvto {
+    width: 145px;
+    height: 145px;
+}
+
+.imgAvto img {
+    width: 100%;
+    height: 100%;
+}
+
+.textAllAvto h1 {
+    margin: 5px 0px 0px 10px;
+    font-size: 20px;
+}
+
+.textAllAvto p {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.contentAvto:hover {
+    transition: 300ms;
+    box-shadow: rgba(255, 0, 0, 0.884) 0px 0px 0px 2px, rgba(255, 0, 0, 0.984) 0px 4px 6px -1px, rgba(255, 0, 0, 0.774) 0px 1px 0px inset;
+}
+
+.contentAvto:hover .imgAvto {
+    transition: 300ms;
+    box-shadow: rgba(255, 0, 0, 0.884) 0px 0px 0px 2px, rgba(255, 0, 0, 0.984) 0px 4px 6px -1px, rgba(255, 0, 0, 0.774) 0px 1px 0px inset;
+}
+
+.textAllAvto div i {
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgb(100, 196, 234);
+
+}
+
+.textAllAvto div span {
+    margin-left: 5px;
+    font-size: 13px;
+    color: black;
+}
+
+.textAllAvto div {
+    margin-top: 8px;
+}
+
+.textAllAvto span {
+    margin: 15px 0 0 5px;
+    font-size: 13px;
+    color: rgb(108, 202, 239);
+
+}
+
+.textsAvto {
+    width: 330px;
+    height: 40px;
+}
+
+.textsAvto p {
+    font-size: 15px;
+}
+
+
+/* -------------------------> FILTER <-------------------------*/
+
+
+.selectAll {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectTop {
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+.hamisi {
+    height: 48px;
+    width: auto;
+    background-color: #ffffff;
+    color: #8D94AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 14px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.radio .hamisi:nth-child(2) {
+    border-radius: 0px;
+    border-left: 1px solid #cacbd1;
+    border-right: 1px solid #cacbd1;
+}
+
+.radio {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+input::placeholder {
+    color: #8D94AD;
+}
+
+
+.eyni {
+    height: 48px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.eyni input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.markaText {
+    width: 242px;
+    height: 400px;
+    background-color: #fff;
+    z-index: 233;
+    position: absolute;
+    top: 170px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.marka {
+    position: relative;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+.seher {
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+.none {
+    display: none;
+}
+
+.markaText ul {
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.markaText ul li i {
+    color: red;
+}
+
+.modelText {
+    width: 242px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 22;
+    top: 170px;
+    left: 526px;
+    border-radius: 10px;
+}
+
+.model {
+    position: relative;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+.modelText ul li {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modelText ul {
+    padding-left: 0;
+}
+
+.modelText ul li i {
+    color: red;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.modelCheckbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+
+.modelCheckbox input {
+    width: 20px;
+    accent-color: red;
+}
+
+.min {
+    height: 46px;
+    border-right: 5px solid rgba(72, 70, 70, 0.274);
+
+}
+
+.max {
+    height: 49px;
+
+}
+
+.minMax {
+    display: flex;
+    height: 46px;
+    width: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+.valutakreditBarter {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.selectCenter {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin-left: 15px;
+    gap: 10px;
+}
+
+.min input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.max input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.valuta {
+    height: 46px;
+    width: 60px;
+    border-radius: 10%;
+    overflow: hidden;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+option {
+    padding: 60px;
+}
+
+.oxsar {
+    height: 46px;
+    width: 60px;
+    border-radius: 10%;
+    overflow: hidden;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.banNovu {
+    height: 46px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+.banNovu input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.ilMinMax {
+    display: flex;
+    height: 46px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(72, 70, 70, 0.274);
+}
+
+.ilMin input {
+    width: 125px;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.ilMax input {
+    width: 125px;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+
+.selectBottom {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.bottomElantn {
+    display: flex;
+    gap: 20px;
+}
+
+.yeniElan span:nth-child(2) {
+    color: #4C88F9;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.yeniElan span {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.bottomElantn p {
+    color: #CA1016;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+.bottomElantn button {
+    padding: 15px 35px 15px 35px;
+    cursor: pointer;
+    color: white;
+    background-color: #CA1016;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    position: relative;
+    top: -15px;
+}
+
+.vipElanlar {
+    height: 58px;
+    width: 100%;
+    background-color: #F1F3F7;
+    display: flex;
+    align-items: center;
+}
+
+.vip {
+    width: 97%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vip div p {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.imgText {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.imgCart {
+    height: 27px;
+    width: 17px;
+}
+
+.imgCart img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgText p {
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #CA1016;
+}
