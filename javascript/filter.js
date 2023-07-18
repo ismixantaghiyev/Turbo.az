@@ -5,7 +5,7 @@ const dataFilter = [
     },
     {
         marka: "LADA (VAZ)",
-        model: ["2106", "2107", "2108", "2109", "21099"]
+        model: ["2106", "2107", "2108", "2109", "Priora"]
     },
     {
         marka: "BMW",
@@ -14,6 +14,10 @@ const dataFilter = [
     {
         marka: "Lexus",
         model: [" LX 600", "LX 500d", "IS 300", "NX 300", "ES 250"]
+    },
+    {
+        marka: "Mercedes",
+        model: [" S 600", "G 63 AMG", "CLA 250", "GLS 450", "S 350 d", "V 220"]
     }
 ]
 
@@ -28,6 +32,7 @@ function showMarka() {
             <li>${item.marka}</li>
         </ul>`
     })
+    searchClick()
 }
 showMarka()
 
@@ -37,16 +42,22 @@ search1.oninput = function () {
 }
 
 
-const markaLi = document.querySelectorAll(".markaText li")
-markaLi.forEach(item => {
-    item.onclick = function () {
-        search1.value = item.innerHTML
-        markaText.classList.toggle("none")
-        modelShow()
-        modelDisable()
+function searchClick() {
+    const markaLi = document.querySelectorAll(".markaText li")
+    markaLi.forEach(item => {
+        item.onclick = function () {
+            search1.value = item.innerHTML
+            markaText.classList.toggle("none")
+            modelShow()
+            modelDisable()
+            searchModel.value = ""
+            console.log(models);
+            models = []
+        }
+    })
 
-    }
-})
+}
+
 
 const sifirlaMarka = document.querySelector(".sifirla");
 
@@ -70,32 +81,46 @@ const modelTextInnerHTML = document.querySelector(".modelText");
 
 function modelShow() {
     modelTextInnerHTML.innerHTML = `  <ul>
-        <li class="sifirlaa"><i class="fa-solid fa-xmark"></i> Sıfırla</li>
+        <li class="sifirlaModel"><i class="fa-solid fa-xmark"></i> Sıfırla</li>
     </ul>`
     dataFilter.filter(item => item.marka == search1.value)[0]?.model.map(item => modelTextInnerHTML.firstElementChild.innerHTML += `
-<label class="modelCheckbox">
-<li class="models" >
-${item}
+    <label class="modelCheckbox">
+    <li class="models" >
+    ${item}
+    </li>
+    <input id="disableNone" type="checkbox"  />
+    </label>
+    `)
 
-</li>
-<input type="checkbox" />
 
-</label>
-`)
+    const sifirlaModel = document.querySelector(".sifirlaModel")
+    const nullEl = document.querySelectorAll("#disableNone")
+    sifirlaModel.onclick = function () {
+        searchModel.value = "";
+        modelText.classList.toggle("none")
+        nullEl.forEach(item => {
+            if (item.checked == true) {
+                item.checked = false
+            }
+        })
+        models = [];
+
+    }
 
     const modelLi = document.querySelectorAll(".models");
     modelLi.forEach(item => {
         item.onclick = function () {
-            if (!models.includes(item.innerHTML)) {
-                models.push(item.innerHTML)
+            let sx = item.innerHTML.trim()
+
+            if (!models.includes(sx)) {
+                models.push(sx)
             }
             else {
-                models.splice(models.indexOf(item.innerHTML), 1)
+                models.splice(models.indexOf(sx), 1)
             }
             searchModel.value = models;
         }
     })
-
 }
 modelShow()
 
@@ -105,33 +130,38 @@ function modelDisable() {
     } else {
         searchModel.setAttribute("disabled", "")
     }
-
 }
 modelDisable()
 
 
+function elanlar() {
 
+    const elanlariGoster = document.querySelector("#elanlariGoster")
+    elanlariGoster.onclick = function () {
+        likePr()
+        show()
 
-
-const radioInput = document.querySelectorAll("#name");
-const hamisi = document.querySelectorAll(".hamisi");
-
-
-hamisi.forEach(box => {
-    ;
-    box.onclick = function () {
-        box.style.backgroundColor = "red"
-        box.style.color = "white"
-
+        // modelText.classList.toggle("none")
     }
-})
+}
+elanlar()
 
 
 
-const elanlariGoster = document.querySelector("#elanlariGoster")
+// const label = document.querySelectorAll(".labelRadio");
+// const radioInput = document.querySelector("#name");
+// const divLabel = document.querySelectorAll(".hamisi");
 
+// label.forEach(lab => {
+//     lab.onclick  = function () {
+//         radioInput.classList.toggle("label")
+//     }
+// })
 
-elanlariGoster.onclick = function () {
-    show()
+const kreditBtn = document.querySelector(".kredit");
 
+kreditBtn.onclick = function () {
+    // kreditBtn.style.backgroundColor = "white";
+    // kreditBtn.style.color = "black"
+    kreditBtn.classList.toggle("kredits")
 }

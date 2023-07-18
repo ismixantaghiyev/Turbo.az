@@ -651,6 +651,7 @@ input[type='radio'] {
     display: flex;
     width: 240px;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .selectCenter {
@@ -673,6 +674,7 @@ input[type='radio'] {
     width: 100%;
     outline: none;
     border: none;
+    padding-left: 10px;
 }
 
 .valuta {
@@ -690,9 +692,6 @@ select {
     border: none;
 }
 
-option {
-    padding: 60px;
-}
 
 .oxsar {
     height: 46px;
@@ -711,7 +710,7 @@ option {
 
 .banNovu {
     height: 46px;
-    width: 250px;
+    width: 213px;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid rgba(72, 70, 70, 0.274);
@@ -728,26 +727,34 @@ option {
 .ilMinMax {
     display: flex;
     height: 46px;
-    width: 250px;
+    width: 241px;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid rgba(72, 70, 70, 0.274);
 }
 
+.ilMin{
+    width: 120px;
+    border-right: 5px solid rgba(72, 70, 70, 0.274);
+}
+
+.ilMax{
+    width: 120px;
+}
+
 .ilMin input {
-    width: 125px;
+    width: 100%;
     height: 100%;
     outline: none;
     border: none;
-    padding-left: 10px;
+
 }
 
 .ilMax input {
-    width: 125px;
+    width: 100%;
     height: 100%;
     outline: none;
     border: none;
-    padding-left: 10px;
 }
 
 
@@ -836,4 +843,16 @@ option {
     font-size: 12px !important;
     font-weight: 500 !important;
     color: #CA1016;
+}
+
+
+.label{
+    background-color: red;
+    color: white;
+}
+
+.kredits{
+    border: 1px solid red;
+    color: red;
+    background-color: #FFE6E5;
 }

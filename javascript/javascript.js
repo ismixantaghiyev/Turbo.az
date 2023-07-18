@@ -1,13 +1,48 @@
 let data = [
     {
+        id: 29,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F06%2F02%2F22%2F15%2F57%2F96a280da-d1c2-4806-adba-1ba00f7c2ab3%2F21128_ceHf6hZ9Om2Nv9Flfj4BEA.jpg",
+        price: "285 000 $",
+        marka: "Mercedes G 63 AMG",
+        year: "2019, 4.0L, 47 000 km",
+        date: "Bakı, 03.07.2023 23:12",
+        model: "G 63 AMG"
+    },
+    {
+        id: 30,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F06%2F25%2F12%2F13%2F15%2Fbf10a361-c915-4496-a55c-13c6d94676c8%2F60361_mW9HvbGcTNqiOLtF14SbUw.jpg",
+        price: "43 500 $",
+        marka: "Toyota Tundra",
+        year: "2010, 5.7L, 175 000 km",
+        date: "Bakı, 25.06.2023 16:39",
+        model: "Tundra"
+    },
+    {
+        id: 31,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F01%2F24%2F19%2F49%2F42%2F379f4b88-d58f-4e45-bbe0-8852bd870817%2F98244_RDT_R6nYybGbOmFQu9XwKA.jpg",
+        price: "85 000 $",
+        marka: "Mercedes S 600",
+        year: "2015, 5.5L, 19 500 km",
+        date: "Bakı, 10.07.2023 23:12",
+        model: "S 600"
+    },
+    {
+        id: 32,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F02%2F10%2F34%2F05%2F97e47b42-935f-4e81-bf6d-60ce6b2fbc84%2F93347_3IIanmskGqOdPtYIEmvtSA.jpg",
+        price: "22 000 $",
+        marka: "Mercedes CLA 250",
+        year: "2015, 2.0L, 154 500 km",
+        date: "Bakı, Bugün 12:22",
+        model: "CLA 250"
+    },
+    {
         id: 1,
         img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F02%2F12%2F58%2F21%2F560a053c-b607-4384-a295-b2a5529cba09%2F98982_hODZgiHJFU6lcmDit43oWw.jpg",
         price: "40 940 $",
-        marka: "Toyota",
+        marka: "Toyota Camry",
         year: "2022, 2.5L, 1659 km",
         date: "Bakı, 02.07.2023 13:10",
-        model:"Camry"
-        // model: ["Alphard", "Auris", "Avalon", "Avensis", "Aygo", "Caldina", "C - HR", "Camry", "Celica", "Corolla", "Corolla Cross", "Corona", "Estima", "FJ Cruiser", "Venza", "Urban Cruiser", "Tundra", "Tercel", "Tacoma", "Surf", "Sienna", "Solara", "Sequoia", "Rush", "Raize", "RAV4", "Proace", "Prius V"]
+        model: "Camry"
     },
     {
         id: 2,
@@ -16,8 +51,7 @@ let data = [
         marka: "LADA (VAZ) 2115",
         year: "2012, 1.6L, 326 000 km",
         date: "Bakı, 08.07.2023 10:00",
-        model:"2115"
-        // model: ["2101", "21011", "21013", "2102", "2103", "2104", "21045", "2105", "2106", "2107", "2108", "2109", "21099", "2110", "2111", "2112", "21108", "21123", "2113", "2114", "2115", "Kalina", "Largus", "Largus", "Largus Cross", "Granta", "Niva", " Niva Bronto", "Niva Travel", "Priora", "Oka", "Vesta", "Vesta", "Vesta Cross", "Vesta SW", "Vesta SW Cross"]
+        model: "2115"
     },
     {
         id: 3,
@@ -26,7 +60,7 @@ let data = [
         marka: "BMW X5",
         year: "2012, 3.0L, 169 000 km",
         date: "Bakı, 06.07.2023 12:10",
-        model:"X5"
+        model: "X5"
     },
     {
         id: 4,
@@ -35,7 +69,7 @@ let data = [
         marka: "Kia Sportage",
         year: "2023, 1.6L, 0 km",
         date: "Bakı, 03.07.2023 09:20",
-        model:"Sportage"
+        model: "Sportage"
 
     },
     {
@@ -45,7 +79,7 @@ let data = [
         marka: "BMW X7",
         year: "2023, 3.0L, 0 km",
         date: "Bakı, 25.06.2023 00:20",
-        model:"x7"
+        model: "X7"
 
 
     },
@@ -56,7 +90,7 @@ let data = [
         marka: "Lexus LX 600",
         year: "2023, 3.5L, 0 km",
         date: "Bakı, 06.07.2023 12:20",
-        model:"LX 600"
+        model: "LX 600"
 
     },
     {
@@ -66,7 +100,7 @@ let data = [
         marka: "BDY Song Plus",
         year: "2022, 0.0L, 0 km",
         date: "Bakı, 05.07.2023 11:20",
-        model:"Song Plus"
+        model: "Song Plus"
 
     },
     {
@@ -76,7 +110,7 @@ let data = [
         marka: "Mercedes V 220",
         year: "2017, 2.2L, 197 800 km",
         date: "Bakı, 04.07.2023 12:30",
-        model:"Camry"
+        model: "V 220"
 
     },
     {
@@ -86,7 +120,7 @@ let data = [
         marka: "Volkswagen Passat CC",
         year: "2015, 2.0L, 124 000 km",
         date: "Bakı, dünən 23:42",
-        model:"Camry"
+        model: "Passat CC"
     },
     {
         id: 10,
@@ -95,7 +129,7 @@ let data = [
         marka: "Opel Astra",
         year: "2007, 1.4L, 190 000 km",
         date: "Bakı, 07.07.2023 09:20",
-        model:"Camry"
+        model: "Astra"
     },
     {
         id: 11,
@@ -104,7 +138,7 @@ let data = [
         marka: "Hyundai Santa Fe",
         year: "2016, 2ş0L, 172 000 km",
         date: "Bakı, 01.07.2023 12:20",
-        model:"Camry"
+        model: "Santa Fe"
     },
     {
         id: 12,
@@ -113,7 +147,7 @@ let data = [
         marka: "Ford Fusion",
         year: "2019, 2.0L, 83 000 km",
         date: "Bakı, 05.07.2023 18:12",
-        model:"Camry"
+        model: "Fusion"
     },
     {
         id: 13,
@@ -122,7 +156,7 @@ let data = [
         marka: "Honda Accord",
         year: "2020, 1.5L, 80 000 km",
         date: "Bakı, 06.07.2023 18:12",
-        model:"Camry"
+        model: "Accord"
     },
     {
         id: 14,
@@ -131,7 +165,7 @@ let data = [
         marka: "Lexus IS 300",
         year: "2007, 3.0L, 234 000 km",
         date: "Bakı, 11.07.2023 11:02",
-        model:"Camry"
+        model: "IS 300"
     },
     {
         id: 15,
@@ -140,7 +174,7 @@ let data = [
         marka: "Mercedes G 63 AMG",
         year: "2020, 4.0L, 52 000 km",
         date: "Bakı, 06.07.2023 14:11",
-        model:"Camry"
+        model: "G 63 AMG"
     },
     {
         id: 16,
@@ -149,7 +183,7 @@ let data = [
         marka: "Hyundai Santa Fe",
         year: "2011, 2.0L, 212 000 km",
         date: "Bakı, 07.07.2023 18:12",
-        model:"Camry"
+        model: "Santa Fe"
     },
     {
         id: 17,
@@ -158,7 +192,7 @@ let data = [
         marka: "Lexus LX 500d",
         year: "2022, 3.3L, 0 km",
         date: "Bakı, 10.07.2023 21:12",
-        model:"Camry"
+        model: "LX 500d"
     },
     {
         id: 18,
@@ -167,7 +201,7 @@ let data = [
         marka: "MAN TGX 18.440",
         year: "2010, 12L, 1 050 000 km",
         date: "Bakı, 08.07.2023 15:12",
-        model:"Camry"
+        model: "Camry"
     },
     {
         id: 19,
@@ -176,7 +210,7 @@ let data = [
         marka: "Lexus ES 250",
         year: "2022, 2.5L, 0 km",
         date: "Bakı, 06.07.2023 18:15",
-        model:"Camry"
+        model: "ES 250"
     },
     {
         id: 20,
@@ -185,7 +219,7 @@ let data = [
         marka: "Lexus NX 300",
         year: "2018, 2.0L, 76 000 km",
         date: "Bakı, 12.07.2023 13:05",
-        model:"NX 300"
+        model: "NX 300"
 
     },
     {
@@ -195,7 +229,7 @@ let data = [
         marka: "Toyota Corolla",
         year: "2022, 1.8L, 0 km",
         date: "Bakı, 10.07.2023 21:12",
-        model:"Carolla"
+        model: "Corolla"
 
     },
     {
@@ -205,7 +239,7 @@ let data = [
         marka: "BMW X6",
         year: "2022, 3.0L, 19 331 km",
         date: "Bakı, 10.07.2023 11:22",
-        model:"X6"
+        model: "X6"
 
     },
     {
@@ -215,47 +249,88 @@ let data = [
         marka: "LADA (VAZ) 2106",
         year: "2004, 1.5L, 50 000 km",
         date: "Bakı, bugün 11:04",
-        model:"2106"
+        model: "2106"
 
     },
     {
         id: 24,
         img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F04%2F01%2F22%2F30%2F04%2F4e023a31-8b07-4348-9378-5a7a79aed41f%2F52788_1eGvAqVpzPYS7cCsTQulBw.jpg",
         price: "45 000 $",
-        marka: "Toyot RAV4",
+        marka: "Toyota RAV4",
         year: "2022, 2.5L, 0 km",
         date: "Bakı, 29.06.2023 23:12",
-        model:"RAV4"
+        model: "RAV4"
 
     },
     {
-        id: 24,
+        id: 25,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F04%2F19%2F39%2F20%2Fbd2ee63f-53ca-47e6-8feb-2a4f1224f51d%2F98878_SasjgZ9NqTlhmHDSEZHvRw.jpg",
+        price: "49 500 $",
+        marka: "BMW M3",
+        year: "2015, 3.0L, 99 000 km",
+        date: "Bakı, 29.06.2023 23:12",
+        model: "M3"
+    },
+    {
+        id: 26,
         img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F09%2F09%2F30%2F38%2F93c13e0d-68d6-4bbc-82d0-ea5147ea48c9%2F4842_tZQUR8fNn7L3-fdRGp9WBw.jpg",
         price: "6 800 AZN",
-        marka: "Toyot RAV4",
-        year: "2022, 2.5L, 0 km",
+        marka: "LADA (VAZ) 2107",
+        year: "2008, 1.6L, 179 000 km",
         date: "Bakı, 29.06.2023 23:12",
-        model:"RAV4"
-
+        model: "2107"
     },
+    {
+        id: 27,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F11%2F22%2F31%2F23%2F632bde72-f768-4929-94df-5b86688a14b9%2F35472_lZvjLWFOgrap4rnT-AtBSw.jpg",
+        price: "53 500 AZN",
+        marka: "BMW M4",
+        year: "2014, 3.0L, 59 000 km",
+        date: "Bakı,Dünən 13:52",
+        model: "M4"
+    },
+    {
+        id: 28,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F06%2F12%2F00%2F12%2F29%2F6ad92275-79d5-4673-ad48-d18e1b3b818b%2F60368_hKZTrf0msjf-RWSZ8058Zw.jpg",
+        price: "6 800 AZN",
+        marka: "Toyota Prius V",
+        year: "2015, 1.8L, 222 303 km",
+        date: "Bakı, 12.06.2023 12:43",
+        model: "Prius V"
+    },
+    {
+        id: 33,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F07%2F14%2F51%2F52%2F40d20fb6-7e7e-446d-bd01-9f8dc0d834e9%2F74278_F5gPL0dQOz2SJB9lPXwnbQ.jpg",
+        price: "12 800 AZN",
+        marka: "LADA (VAZ) Priora",
+        year: "2014, 1.6L, 143 232 km",
+        date: "Bakı,23.06.2023 16:43",
+        model: "Priora"
+    },
+    {
+        id: 35,
+        img: "https://turbo.azstatic.com/uploads/f460x343/2023%2F07%2F16%2F21%2F37%2F27%2F64c76d4f-fc77-4689-b100-8b8b387dc427%2F35490_VgoeXnT-MVKFaqr25h9Izw.jpg",
+        price: "5 500 AZN",
+        marka: "LADA (VAZ) 2109",
+        year: "2001, 1.6L, 90 000 km",
+        date: "Sumqayıt, Dünən 12:43",
+        model: "Prius V"
+    },
+
 
 
 ]
 let models = []
 
 const searchModel = document.querySelector("#search2")
-
 const cartInnerHTML = document.querySelector(".allcart")
 function show() {
-   
-    cartInnerHTML.innerHTML =""
-   let dataFilter1= data.filter(item => (item.marka.includes(search1.value)))
-   let dataFilter2= data.filter(item => (item.marka.includes(search1.value)&&(searchModel.value.includes(item.model))))
-   let dataFilter=models.length>0?dataFilter2:dataFilter1
-   
 
-
-   dataFilter.map(item => (cartInnerHTML.innerHTML += `<div class="cart">
+    cartInnerHTML.innerHTML = ""
+    let dataFilter1 = data.filter(item => (item.marka.includes(search1.value)))
+    let dataFilter2 = data.filter(item => (item.marka.includes(search1.value) && (searchModel.value.includes(item.model))))
+    let dataFilter = models.length > 0 ? dataFilter2 : dataFilter1
+    dataFilter.map(item => (cartInnerHTML.innerHTML += `<div class="cart">
         <div class="image" id="${item.id}">
             <img src="${item.img}">
             <div class="likebutton"><i class="fa-solid fa-heart"></i></i></div>
@@ -265,7 +340,8 @@ function show() {
         <p>${item.year}</p>
         <span>${item.date}</span>
     </div>`
-    ))
+))
+// likePr()
 }
 show()
 
@@ -273,28 +349,31 @@ show()
 
 const likeButtons = document.querySelectorAll(".likebutton");
 const secilmisler = document.getElementById("likeCartAll")
-let basket = [];
-basket = JSON.parse(localStorage.getItem("basket")) || [];
+let basket = JSON.parse(localStorage.getItem("basket")) || [];
 
-likeButtons.forEach(item => {
-    item.onclick = function (e) {
-        const heartIcon = item.firstChild
-        if (!heartIcon.classList.contains("red")) {
-            heartIcon.classList.add("red")
-            const id = item.parentNode.id
-            const findProduct = data.find(isi => isi.id == id);
-            const exs = basket.find(item => item.id == id)
-            !exs && basket.push(findProduct);
-            localStorage.setItem("basket", JSON.stringify(basket))
-        }
-        else {
-            heartIcon.classList.remove("red")
-            basket=basket.filter(car=>car.id!=item.parentNode.id)
-            localStorage.setItem("basket", JSON.stringify(basket))
-        }
 
-    }
-})
+function likePr() {
+    
+    likeButtons.forEach(item => {
+        item.onclick = function (e) {
+            const heartIcon = item.firstChild
+            if (!heartIcon.classList.contains("red")) {
+                heartIcon.classList.add("red")
+                const id = item.parentNode.id
+                const findProduct = data.find(isi => isi.id == id);
+                const exs = basket.find(item => item.id == id)
+                !exs && basket.push(findProduct);
+                localStorage.setItem("basket", JSON.stringify(basket))
+            }
+            else {
+                heartIcon.classList.remove("red")
+                basket = basket.filter(car => car.id != item.parentNode.id)
+                localStorage.setItem("basket", JSON.stringify(basket))
+            }
+        }
+    })
+}
+likePr()
 
 
 
@@ -337,7 +416,7 @@ liked()
 const markaclick = document.querySelector(".marka");
 const markaText = document.querySelector(".markaText");
 
-markaclick.onclick   = function(){
+markaclick.onclick = function () {
     markaText.classList.toggle("none")
 }
 
@@ -345,7 +424,7 @@ markaclick.onclick   = function(){
 const modelclick = document.querySelector(".model");
 const modelText = document.querySelector(".modelText");
 
-modelclick.onclick   = function(){
+modelclick.onclick = function () {
     modelText.classList.toggle("none")
 }
 
