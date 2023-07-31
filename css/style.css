@@ -847,11 +847,17 @@ select {
 
 
 .label{
-    background-color: red;
+    background-color: #ca1016;
     color: white;
 }
 
 .kredits{
+    border: 1px solid red;
+    color: red;
+    background-color: #FFE6E5;
+}
+
+.barters{
     border: 1px solid red;
     color: red;
     background-color: #FFE6E5;

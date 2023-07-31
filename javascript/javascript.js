@@ -428,5 +428,8 @@ modelclick.onclick = function () {
     modelText.classList.toggle("none")
 }
 
-
-
+window.onclick = function(e){
+    if (e.target !== modelclick && e.target !== modelText){
+        modelText.style.display = "none"
+    }
+}

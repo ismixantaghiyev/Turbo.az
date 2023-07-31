@@ -111,7 +111,6 @@ function modelShow() {
     modelLi.forEach(item => {
         item.onclick = function () {
             let sx = item.innerHTML.trim()
-
             if (!models.includes(sx)) {
                 models.push(sx)
             }
@@ -150,18 +149,52 @@ elanlar()
 
 // const label = document.querySelectorAll(".labelRadio");
 // const radioInput = document.querySelector("#name");
-// const divLabel = document.querySelectorAll(".hamisi");
+// const divHamisi = document.querySelectorAll(".hamisi");
 
-// label.forEach(lab => {
+// label.forEach(lab => { console.log(lab);
 //     lab.onclick  = function () {
-//         radioInput.classList.toggle("label")
+//         divHamisi.classList.toggle("label")
 //     }
 // })
+
+const labels = document.querySelectorAll(".labelRadio");
+const radioInput = document.querySelector("#name");
+
+labels.forEach(label => {
+    const divHamisi = label.querySelector(".hamisi");
+
+    label.onclick = function () {
+        // İlk önce tüm ".hamisi" div'lerinden "label" sınıfını kaldırın
+        document.querySelectorAll(".hamisi").forEach(div => {
+            div.classList.remove("label");
+        });
+
+        // Sadece tıklanan etiketin altındaki ".hamisi" div'ine "label" sınıfını ekleyin
+        divHamisi.classList.add("label");
+    };
+});
+
+
+
 
 const kreditBtn = document.querySelector(".kredit");
 
 kreditBtn.onclick = function () {
-    // kreditBtn.style.backgroundColor = "white";
-    // kreditBtn.style.color = "black"
     kreditBtn.classList.toggle("kredits")
 }
+
+const barterBtn = document.querySelector(".barter")
+
+barterBtn.onclick = function () {
+    barterBtn.classList.toggle("barters")
+}
+
+
+// const minPrice = document.querySelector(".min");
+// const maxPrice = document.querySelector(".max");
+
+// function maxmin(x,y){
+//     data.filter(i => console.log(i.price))
+// }
+
+// maxmin(4,6)
